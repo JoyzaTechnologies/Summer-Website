@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summer Themed Website</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-brand">Summer Vibes - Lucas Saner</div>
+    <ul class="navbar-menu">
+      <li class="navbar-item"><a href="index.html"><i class="fas fa-home"></i></a></li>
+      <li class="navbar-item"><a href="about.html"><i class="fas fa-user"></i></a></li>
+      <li class="navbar-item"><a href="gallery.html"><i class="fas fa-images"></i></a></li>
+      <li class="navbar-item"><a href="contact.html"><i class="fas fa-envelope"></i></a></li>
+    </ul>
+  </header>
+
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-text-container">
+        <div class="hero-text">SUMMER IS HERE</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cards">
+    <div class="card">
+      <img src="./images/sun.jpg" alt="Image 1">
+      <h2>Sunshine</h2>
+      <p>During the summer, the sun is out for longer than other seasons. Make sure to wear sunscreen while out on your sunny side up adventures.</p>
+    </div>
+    <div class="card">
+      <img src="./images/fireworks.jpeg" alt="Image 2">
+      <h2>Fireworks</h2>
+      <p>Fireworks are often used for celebration, especially for the fourth of July, the independence day of the United States.</p>
+    </div>
+    <div class="card">
+      <img src="./images/picnic.jpg" alt="Image 3">
+      <h2>Picnic</h2>
+      <p>A great way to enjoy the summer weather and the outdoors while enjoying a meal, usually with freinds/family. Careful of ants though! They might bite.</p>
+    </div>
+  </section>
+
+  <footer class="bottom-bar">
+    <div class="bottom-content">
+      &copy; 2024 Joyza Innovations - Lucas Saner. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>>
+
+  <script>
+    $(document).ready(function() {
+      $('.hero-text').hover(
+        function() {
+          $(this).css({
+            'color': '#FF5733',              // Change the text color
+            'text-shadow': '2px 2px 5px rgba(0, 0, 0, 0.3)', // Add subtle shadow
+            'transform': 'rotate(-5deg) scale(1.1)',  // Rotate and slightly scale up
+            'transition': 'all 0.3s ease'   // Smooth transition
+          });
+        },
+        function() {
+          $(this).css({
+            'color': '#000',                 // Revert text color to original
+            'text-shadow': 'none',           // Remove shadow
+            'transform': 'rotate(0deg) scale(1)', // Reset rotation and scale
+            'transition': 'all 0.3s ease'   // Smooth transition
+          });
+        }
+      );
+    });
+  </script>
+</body>
+</html>
